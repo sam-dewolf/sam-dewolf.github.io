@@ -65,6 +65,7 @@
     </section><!--/#main-slider-->
 
 <section id="intro" >
+    <div class="verticalgap" style="height:20px"></div>
     <div class="container">
 
         <div class="section-header">
@@ -91,13 +92,6 @@
                     after having a few class dicussions about usability and accessibility. We referred to the AdaFruit reference pages 
                     for the peripherals we purchased and their respective libraries on the Arduino website during development.
                 </p>
-                <ul class="listarrow">
-                <li><i class="fa fa-angle-double-right"></i>School Water Bottle Fillers</li>
-                <li><i class="fa fa-angle-double-right"></i>Make using reusable water bottles easier</li>
-                <li><i class="fa fa-angle-double-right"></i>Reduce plastic water bottle usage</li>
-                <li><i class="fa fa-angle-double-right"></i>Create a real, purposeful circuit on our own</li> 
-                <li><i class="fa fa-angle-double-right"></i>Use experience gained in labs and homeworks</li>
-                </ul>
             </div>
         </div>
     </div>
@@ -121,8 +115,13 @@
                 <p>
                     We used the <a href="https://www.adafruit.com/product/3619" target="_blank" rel="noopener noreferrer">Adafruit HUZZAH32 - ESP32 Feather</a> as our microcontroller for the circuit. It has a lot of GPIO pins, which we needed 
                     for all the peripherals we were going to use, and it also can use the Arduino libraries, which we needed to interact with those 
-                    peripherals. It was also a device that we already had purchased for the class, so it was convenient. The peripherals we used are 
-                    listed below with links:
+                    peripherals. It was also a device that we already had purchased for the class, so it was convenient. We chose our peripherals 
+                    for many reasons. Choosing most of our peripherals from AdaFruit meant that we could use their immensely helpful guides 
+                    and their libraries. We needed to make sure we could power our parts, so we chose parts that could run on 5V. Unfortunately, 
+                    the solenoid valve that we found needed 12V to run, so we had to get an external power supply. Luckily, we found a 12V/5V 
+                    power supply that enabled us to power both the whole circuit and the solenoid valve with only one connection to the wall. Budget also
+                    had an impact on our choices, as we had to be under a $150 budget for the whole project. We only spent about $70 of that budget. For 
+                    reference, the item we had as inspiration costs about $1500. The peripherals we used are listed below with links:
                 </p>
                 <ul class="listarrow">
                 <li><i class="fa fa-angle-double-right"></i><a href="https://www.adafruit.com/product/466?gclid=CjwKCAjwn8SLBhAyEiwAHNTJbWgCJuVkTUFeD-yeXiOSyztZy-271faqzeXoboiuLEHR9neqvF9mJhoCP4wQAvD_BwE" target="_blank" rel="noopener noreferrer">VCNL4010 Proximity/Light Sensor</a></li>
@@ -225,6 +224,48 @@
                 </div>
             </div>
         </div>
+
+        <div class="row">
+            <div class="col-sm-6 wow fadeInLeft">
+              <img class="img-responsive" src="images/openclose.PNG" alt="openclose">
+            </div>
+
+            <div class="col-sm-6 wow fadeInRight">
+                <h3 class="column-title">Code</h3>
+                <p>
+                    This is the code for the open and close functions. The opener function gets the time when it is called and puts in it the 
+                    global variable reserved for the start time. It also opens the solenoid valve by sending a high value to the MOSFET, which 
+                    manages the 12V reserved for the solenoid valve. The closer function gets the time as well, but stores it in the variable 
+                    reserved for the current(or stop) time. It then calculates how long the valve was open by determining the difference between 
+                    the two times, and does some math to calculate how many ounces of water and, using that, how many bottles of water it saved. 
+                    It sets the cursor on the LCD to the second line and prints the amount of bottles saved to that line. It also stores the value 
+                    of bottles saved to the memory. Finally, it closes the valve. 
+                </p>
+            </div>
+        </div>
+
+        <div class="verticalgap" style="height:20px"></div>
+
+        <div class="row">
+            <div class="col-sm-6 wow fadeInLeft">
+              <img class="img-responsive" src="images/loop.PNG" alt="loop">
+            </div>
+
+            <div class="col-sm-6 wow fadeInRight">
+                <p>
+                    This is the loop function, the heart of an Arduino program. This runs indefinitely, or until the device gets disconnected from power. 
+                    The logic behind it appears complicated, but once you get into it, it's very straightforward. The first check we do is to have the 
+                    led on the button reflect its status. If the button is pressed, we turn the light on, and if its not, we turn it off. The next line 
+                    is getting the proximity value from the proximity sensor and storing it in a variable. Then, if the button is pressed and the valve 
+                    is closed, we call the opener function, because we want to open the valve. Otherwise, the button is not pressed, so we want to use 
+                    the proximity sensor data to control the valve. In this case, if the object near the proximity sensor is closer to the sensor than 
+                    the range we have defined and the valve is closed, we call the opener function to open the valve. Otherwise, if the proximity value 
+                    is outside the range that we have defined and the gate is open, we call the closer function to close the valve. We continue in this 
+                    loop forever, calling the valve to open and close based on the sensor and the button.
+                </p>
+            </div>
+        </div>
+
         
     </div>
 </section><!--/#methods-->
