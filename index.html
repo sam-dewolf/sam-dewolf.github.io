@@ -30,7 +30,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.html"><img src="images/logo.png" width="200" height="90" alt="logo"></a>
+                    <a class="navbar-brand" href="index.html"><img src="images/logo.png" width="236" height="90" alt="logo"></a>
                 </div>
 				
                 <div class="collapse navbar-collapse navbar-right">
@@ -39,8 +39,9 @@
                         <li class="scroll"><a href="#intro">Introduction</a></li>
                         <li class="scroll"><a href="#methods">Methods</a></li> 
                         <li class="scroll"><a href="#result">Result</a></li>
-						<li class="scroll"><a href="#impact">Impact</a></li>
+                        <li class="scroll"><a href="#impact">Impact</a></li>
                         <li class="scroll"><a href="#schedule">Schedule</a></li>
+                        <li class="scroll"><a href="#peripherals">Peripherals</a></li>
                         <li class="scroll"><a href="#references">References</a></li>                        
                     </ul>
                 </div>
@@ -63,7 +64,7 @@
                 </div>
     </section><!--/#main-slider-->
 
- <section id="intro" >
+<section id="intro" >
     <div class="container">
 
         <div class="section-header">
@@ -77,35 +78,37 @@
             </div>
 
             <div class="col-sm-6 wow fadeInRight">
-                <h3 class="column-title">Motivation</h3>
+                <h3 class="column-title">Description</h3>
                 <p>
-                    Our inspiration for the project was the water bottle fillers located around the school. We thought it would be
+                    At the end of our Embedded Systems (CS 435) class, we were asked to complete an embedded system as a project. 
+                    We were expected to come up with an idea, figure out what parts we needed within a budget, plan out a circuit, 
+                    wire/solder all the components together, and write a program to run our system. We had some oversight from our 
+                    professor, in case we were really stuck, but it was an almost entirely unsupervised project within our small groups. 
+                    Our inspiration for the project was the water bottle fillers located around the school. We thought it would be 
                     interesting to create our own version and better understand the device as a result. We also wanted to use the 
                     experience we gained in our labs with devices, libraries, and wiring to create our circuit and code and refine it to 
-                    reach a complete, usable version of a water bottle filler. We also wanted to make it usable in a few different ways
-                    after having a few class dicussions about usability and accessibility.
+                    reach a complete, usable version of a water bottle filler. We also wanted to make it usable in a few different ways 
+                    after having a few class dicussions about usability and accessibility. We referred to the AdaFruit reference pages 
+                    for the peripherals we purchased and their respective libraries on the Arduino website during development.
                 </p>
-<ul class="listarrow">
-<li><i class="fa fa-angle-double-right"></i>School Water Bottle Fillers</li>
-<li><i class="fa fa-angle-double-right"></i>Make using reusable water bottles easier</li>
-<li><i class="fa fa-angle-double-right"></i>Reduce plastic water bottle usage</li>
-<li><i class="fa fa-angle-double-right"></i>Create a real, purposeful circuit</li> 
-<li><i class="fa fa-angle-double-right"></i>Use experience gained in labs and homeworks</li>
-</ul>
-
-
+                <ul class="listarrow">
+                <li><i class="fa fa-angle-double-right"></i>School Water Bottle Fillers</li>
+                <li><i class="fa fa-angle-double-right"></i>Make using reusable water bottles easier</li>
+                <li><i class="fa fa-angle-double-right"></i>Reduce plastic water bottle usage</li>
+                <li><i class="fa fa-angle-double-right"></i>Create a real, purposeful circuit on our own</li> 
+                <li><i class="fa fa-angle-double-right"></i>Use experience gained in labs and homeworks</li>
+                </ul>
             </div>
         </div>
     </div>
-</section><!--/#services-->
-
+</section><!--/#intro-->
   
  <section id="methods">
     <div class="container">
 
         <div class="section-header">
-            <h2 class="section-title wow fadeInDown">Introduction</h2>
-            <p class="wow fadeInDown">Goals, Motivation, and Development</p>
+            <h2 class="section-title wow fadeInDown">Methods</h2>
+            <p class="wow fadeInDown">Devices, Peripherals, and Code</p>
         </div>
 
         <div class="row">
@@ -114,33 +117,36 @@
             </div>
 
             <div class="col-sm-6 wow fadeInRight">
-                <h3 class="column-title">Our Beauty Studio</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa semper aliquam quis mattis quam. Morbi vitae tortor tempus, placerat leo et, suscipit lectus. Phasellus ut euismod massa, eu eleifend ipsum.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa semper aliquam quis mattis quam adipiscing elit. Praesent eget risus vitae massa.</p>
+                <h3 class="column-title">Devices and Peripherals</h3>
+                <p>
+                    We used the <a href="https://www.adafruit.com/product/3619">Adafruit HUZZAH32 - ESP32 Feather</a> as our microcontroller for the circuit. It has a lot of GPIO pins, which we needed 
+                    for all the peripherals we were going to use, and it also can use the Arduino libraries, which we needed to interact with those 
+                    peripherals. It was also a device that we already had purchased for the class, so it was convenient. The peripherals we used are 
+                    listed below with links:
+                </p>
                 <ul class="listarrow">
-                <li><i class="fa fa-angle-double-right"></i>Aroma Therapy</li>
-                <li><i class="fa fa-angle-double-right"></i>Manicure</li>
-                <li><i class="fa fa-angle-double-right"></i>Massage</li>
-                <li><i class="fa fa-angle-double-right"></i>Body Spa</li> 
-                <li><i class="fa fa-angle-double-right"></i>Hair Spa</li>
+                <li><i class="fa fa-angle-double-right"><a href="https://www.adafruit.com/product/466?gclid=CjwKCAjwn8SLBhAyEiwAHNTJbWgCJuVkTUFeD-yeXiOSyztZy-271faqzeXoboiuLEHR9neqvF9mJhoCP4wQAvD_BwE">VCNL4010 Proximity/Light Sensor</a></i></li>
+                <li><i class="fa fa-angle-double-right"></i><a href="https://www.adafruit.com/product/1447">Standard LCD 16x2</a></li>
+                <li><i class="fa fa-angle-double-right"></i><a href="https://www.adafruit.com/product/997?gclid=CjwKCAjwn8SLBhAyEiwAHNTJbb-DV8uaax5MIzhljGP-1CtfZnMrAT9WF4Uifh1UhepCSIE0wNQfMRoCtgUQAvD_BwE">Plastic Solenoid Valve</a></li>
+                <li><i class="fa fa-angle-double-right"></i><a href="https://www.adafruit.com/product/915">Metal On/Off Switch with LED</a></li> 
+                <li><i class="fa fa-angle-double-right"></i><a href="https://www.adafruit.com/product/355">N-Channel Power MOSFET</a></li>
+                <li><i class="fa fa-angle-double-right"></i><a href="https://www.adafruit.com/product/755">Kickback Diode</a></li>
+                <li><i class="fa fa-angle-double-right"></i><a href="https://www.sparkfun.com/products/15701?_ga=2.68098260.453803273.1635879951-312184794.1632850247">Power Supply Kit (12V/5V)</a></li>
+                <li><i class="fa fa-angle-double-right"></i><a href="https://www.adafruit.com/product/239?gclid=CjwKCAjwn8SLBhAyEiwAHNTJbe7Vp_2H8nSE_lVGL74DRY5SKNlz8Kw43ihlJBSkp7t43pTGG8QmUhoCEeYQAvD_BwE">Full Sized Breadboard</a></li>
                 </ul>
-
 
             </div>
         </div>
     </div>
-</section><!--/#intro-->
+</section><!--/#methods-->
 
      <section id="result">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title wow fadeInDown">
-OUR TEAM
-</h2>
-<p class="wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa <br> semper aliquam quis mattis quam.</p> 
+                <h2 class="section-title wow fadeInDown">OUR TEAM</h2>
+                <p class="wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa <br> semper aliquam quis mattis quam.</p> 
             </div>
-			
-			 	
+				
             <div class="row text-center">
                 <div class="col-md-3 col-sm-6 col-xs-12">
                     <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="0ms">
@@ -213,15 +219,15 @@ OUR TEAM
             </div>
 
         </div>
-    </section><!--/#our-team-->
+    </section><!--/#results-->
 
-  <section id="impact">
+    <section id="impact">
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title wow fadeInDown">Gallery</h2>
                 <p class="wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa <br> semper aliquam quis mattis quam.</p>
             </div>
-
+    
             <div class="text-center">
                 <ul class="portfolio-filter" style="display:none">
                     <li><a class="active" href="#" data-filter="*">All Works</a></li>
@@ -230,7 +236,7 @@ OUR TEAM
                     <li><a href="#" data-filter=".development">Body Spa</a></li>
                 </ul><!--/#portfolio-filter-->
             </div>
-
+    
             <div class="portfolio-items">
                 <div class="portfolio-item designing">
                     <div class="portfolio-item-inner">
@@ -240,7 +246,7 @@ OUR TEAM
                         </div>
                     </div>
                 </div><!--/.portfolio-item-->
-
+    
                 <div class="portfolio-item mobile development">
                     <div class="portfolio-item-inner">
                         <img class="img-responsive" src="images/portfolio/02.jpg" alt="">
@@ -249,7 +255,7 @@ OUR TEAM
                         </div>
                     </div>
                 </div><!--/.portfolio-item-->
-
+    
                 <div class="portfolio-item designing">
                     <div class="portfolio-item-inner">
                         <img class="img-responsive" src="images/portfolio/03.jpg" alt="">
@@ -258,7 +264,7 @@ OUR TEAM
                         </div>
                     </div>
                 </div><!--/.portfolio-item-->
-
+    
                 <div class="portfolio-item mobile">
                     <div class="portfolio-item-inner">
                         <img class="img-responsive" src="images/portfolio/04.jpg" alt="">
@@ -267,7 +273,7 @@ OUR TEAM
                         </div>
                     </div>
                 </div><!--/.portfolio-item-->
-
+    
                 <div class="portfolio-item designing development">
                     <div class="portfolio-item-inner">
                         <img class="img-responsive" src="images/portfolio/05.jpg" alt="">
@@ -276,7 +282,7 @@ OUR TEAM
                         </div>
                     </div>
                 </div><!--/.portfolio-item-->
-
+    
                 <div class="portfolio-item mobile">
                     <div class="portfolio-item-inner">
                         <img class="img-responsive" src="images/portfolio/06.jpg" alt="">
@@ -285,7 +291,7 @@ OUR TEAM
                         </div>
                     </div>
                 </div><!--/.portfolio-item-->
-
+    
                 <div class="portfolio-item designing development">
                     <div class="portfolio-item-inner">
                         <img class="img-responsive" src="images/portfolio/07.jpg" alt="">
@@ -294,7 +300,7 @@ OUR TEAM
                         </div>
                     </div>
                 </div><!--/.portfolio-item-->
-
+    
                 <div class="portfolio-item mobile">
                     <div class="portfolio-item-inner">
                         <img class="img-responsive" src="images/portfolio/08.jpg" alt="">
@@ -305,7 +311,7 @@ OUR TEAM
                 </div><!--/.portfolio-item-->
             </div>
         </div><!--/.container-->
-    </section><!--/#portfolio-->
+    </section><!--/#impact-->
 
     <section id="schedule">
         <div class="container">
@@ -425,7 +431,99 @@ OUR TEAM
                 </div>
             </div>
         </div>
-    </section><!--/#pricing-->
+    </section><!--/#schedule-->
+
+    <section id="peripherals">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title wow fadeInDown">Gallery</h2>
+                <p class="wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa <br> semper aliquam quis mattis quam.</p>
+            </div>
+    
+            <div class="text-center">
+                <ul class="portfolio-filter" style="display:none">
+                    <li><a class="active" href="#" data-filter="*">All Works</a></li>
+                    <li><a href="#" data-filter=".designing">Aroma</a></li>
+                    <li><a href="#" data-filter=".mobile">Manicure</a></li>
+                    <li><a href="#" data-filter=".development">Body Spa</a></li>
+                </ul><!--/#portfolio-filter-->
+            </div>
+    
+            <div class="portfolio-items">
+                <div class="portfolio-item designing">
+                    <div class="portfolio-item-inner">
+                        <img class="img-responsive" src="images/portfolio/01.jpg" alt="">
+                        <div class="portfolio-info"> 
+                            <a class="preview" href="images/portfolio/01.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div><!--/.portfolio-item-->
+    
+                <div class="portfolio-item mobile development">
+                    <div class="portfolio-item-inner">
+                        <img class="img-responsive" src="images/portfolio/02.jpg" alt="">
+                        <div class="portfolio-info"> 
+                            <a class="preview" href="images/portfolio/02.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div><!--/.portfolio-item-->
+    
+                <div class="portfolio-item designing">
+                    <div class="portfolio-item-inner">
+                        <img class="img-responsive" src="images/portfolio/03.jpg" alt="">
+                        <div class="portfolio-info"> 
+                            <a class="preview" href="images/portfolio/03.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div><!--/.portfolio-item-->
+    
+                <div class="portfolio-item mobile">
+                    <div class="portfolio-item-inner">
+                        <img class="img-responsive" src="images/portfolio/04.jpg" alt="">
+                        <div class="portfolio-info"> 
+                            <a class="preview" href="images/portfolio/04.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div><!--/.portfolio-item-->
+    
+                <div class="portfolio-item designing development">
+                    <div class="portfolio-item-inner">
+                        <img class="img-responsive" src="images/portfolio/05.jpg" alt="">
+                        <div class="portfolio-info"> 
+                            <a class="preview" href="images/portfolio/05.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div><!--/.portfolio-item-->
+    
+                <div class="portfolio-item mobile">
+                    <div class="portfolio-item-inner">
+                        <img class="img-responsive" src="images/portfolio/06.jpg" alt="">
+                        <div class="portfolio-info"> 
+                            <a class="preview" href="images/portfolio/06.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div><!--/.portfolio-item-->
+    
+                <div class="portfolio-item designing development">
+                    <div class="portfolio-item-inner">
+                        <img class="img-responsive" src="images/portfolio/07.jpg" alt="">
+                        <div class="portfolio-info"> 
+                            <a class="preview" href="images/portfolio/07.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div><!--/.portfolio-item-->
+    
+                <div class="portfolio-item mobile">
+                    <div class="portfolio-item-inner">
+                        <img class="img-responsive" src="images/portfolio/08.jpg" alt="">
+                        <div class="portfolio-info"> 
+                            <a class="preview" href="images/portfolio/08.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div><!--/.portfolio-item-->
+            </div>
+        </div><!--/.container-->
+    </section><!--/#peripherals-->
    
    
 
@@ -537,7 +635,7 @@ OUR TEAM
                 <p class="wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa <br> semper aliquam quis mattis quam.</p>
             </div>
         </div>
-    </section><!--/#contact-us-->
+    </section><!--/#references-->
 
 
     <section id="contact">
