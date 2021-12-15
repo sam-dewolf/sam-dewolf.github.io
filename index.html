@@ -41,7 +41,6 @@
                         <li class="scroll"><a href="#result">Result</a></li>
                         <li class="scroll"><a href="#impact">Impact</a></li>
                         <li class="scroll"><a href="#schedule">Schedule</a></li>
-                        <li class="scroll"><a href="#peripherals">Peripherals</a></li>
                         <li class="scroll"><a href="#references">References</a></li>                        
                     </ul>
                 </div>
@@ -98,7 +97,7 @@
     <div class="verticalgap" style="height:20px"></div>
 </section><!--/#intro-->
   
- <section id="methods">
+<section id="methods">
     <div class="container">
 
         <div class="section-header">
@@ -120,9 +119,12 @@
                     for many reasons. Choosing most of our peripherals from AdaFruit meant that we could use their immensely helpful guides 
                     and their libraries. We needed to make sure we could power our parts, so we chose parts that could run on 5V. Unfortunately, 
                     the solenoid valve that we found needed 12V to run, so we had to get an external power supply. Luckily, we found a 12V/5V 
-                    power supply that enabled us to power both the whole circuit and the solenoid valve with only one connection to the wall. Budget also
+                    power supply that enabled us to power both the whole circuit and the solenoid valve with only one connection to the wall. We also considered 
+                    the ways in which a user could interact with our system. The system that already exists around the school has a proximity sensor for 
+                    the bottle filling, but no button. We wanted to have at least two ways of using our system, so we implemented a button as well. 
+                    The user is shown how many plastic water bottles haven't been used as a result of our system on an LCD. Budget also
                     had an impact on our choices, as we had to be under a $150 budget for the whole project. We only spent about $70 of that budget. For 
-                    reference, the item we had as inspiration costs about $1500. The peripherals we used are listed below with links:
+                    reference, the item we had as inspiration costs about $1500. The peripherals we used are shown below with links:
                 </p>
                 
 
@@ -260,397 +262,362 @@
             </div>
         </div>
 
+        <div class="row">
+            <div class="col-sm-6 wow fadeInLeft">
+                <table>
+                    <tr>
+                      <th>Item</th>
+                      <th>Supplier</th>
+                      <th>Price</th>
+                    </tr>
+                    <tr>
+                      <td><a href="https://www.adafruit.com/product/466?gclid=CjwKCAjwn8SLBhAyEiwAHNTJbWgCJuVkTUFeD-yeXiOSyztZy-271faqzeXoboiuLEHR9neqvF9mJhoCP4wQAvD_BwE" target="_blank" rel="noopener noreferrer">VCNL4010 Proximity/Light Sensor</a></td>
+                      <td>AdaFruit</td>
+                      <td>$7.50</td>
+                    </tr>
+                    <tr>
+                      <td><a href="https://www.adafruit.com/product/1447" target="_blank" rel="noopener noreferrer">Standard LCD 16x2</a></td>
+                      <td>AdaFruit</td>
+                      <td>$10.95</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.adafruit.com/product/997?gclid=CjwKCAjwn8SLBhAyEiwAHNTJbb-DV8uaax5MIzhljGP-1CtfZnMrAT9WF4Uifh1UhepCSIE0wNQfMRoCtgUQAvD_BwE" target="_blank" rel="noopener noreferrer">Plastic Solenoid Valve</a></td>
+                        <td>AdaFruit</td>
+                        <td>$6.95</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.adafruit.com/product/915" target="_blank" rel="noopener noreferrer">Metal On/Off Switch with LED</a></td>
+                        <td>AdaFruit</td>
+                        <td>$4.95</td>
+                    </tr>
+                    <tr>
+                        <td></i><a href="https://www.adafruit.com/product/355" target="_blank" rel="noopener noreferrer">N-Channel Power MOSFET</a></td>
+                        <td>AdaFruit</td>
+                        <td>$1.75</td>
+                    </tr>
+                    <tr>
+                        <td></i><a href="https://www.adafruit.com/product/755" target="_blank" rel="noopener noreferrer">Kickback Diode</a></td>
+                        <td>AdaFruit</td>
+                        <td>$1.50</td>
+                    </tr>
+                    <tr>
+                        <td></i><a href="https://www.sparkfun.com/products/15701?_ga=2.68098260.453803273.1635879951-312184794.1632850247" target="_blank" rel="noopener noreferrer">Power Supply Kit (12V/5V)</a></td>
+                        <td>Sparkfun</td>
+                        <td>$17.95</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.adafruit.com/product/239?gclid=CjwKCAjwn8SLBhAyEiwAHNTJbe7Vp_2H8nSE_lVGL74DRY5SKNlz8Kw43ihlJBSkp7t43pTGG8QmUhoCEeYQAvD_BwE" target="_blank" rel="noopener noreferrer">Full Sized Breadboard</a></td>
+                        <td>AdaFruit</td>
+                        <td>$5.95</td>
+                    </tr>
+                  </table>
+            </div>
+
+            <div class="col-sm-6 wow fadeInRight">
+                <p>
+                    This is our bill of materials. We had a budget of $150, and spent just about $70.
+                </p>
+            </div>
+        </div>
         
     </div>
 
 </section><!--/#methods-->
-    <div class="verticalgap" style="height:20px"></div>
-    <section id="result">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title wow fadeInDown">OUR TEAM</h2>
-                <p class="wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa <br> semper aliquam quis mattis quam.</p> 
-            </div>
-				
-            <div class="row text-center">
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="0ms">
-                        <div class="team-img">
-                            <img class="img-responsive" src="images/team/01.jpg" alt="">
-                        </div>
-                        <div class="team-info">
-                            <h3>Micky Deo</h3>
-                            <span>Founder</span> 
-                        </div> 
-                        <ul class="social-icons">
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="100ms">
-                        <div class="team-img">
-                            <img class="img-responsive" src="images/team/02.jpg" alt="">
-                        </div>
-                        <div class="team-info">
-                            <h3>Mike Timobbs</h3>
-                            <span>Sr. Dresser</span> 
-                        </div> 
-                        <ul class="social-icons">
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="200ms">
-                        <div class="team-img">
-                            <img class="img-responsive" src="images/team/03.jpg" alt="">
-                        </div>
-                        <div class="team-info">
-                            <h3>Remo Silvaus</h3>
-                            <span>Sr. Therapist</span> 
-                        </div> 
-                        <ul class="social-icons">
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
-                        <div class="team-img">
-                            <img class="img-responsive" src="images/team/04.jpg" alt="">
-                        </div>
-                        <div class="team-info">
-                            <h3>Niscal Deon</h3>
-                            <span>Massager</span> 
-                        </div> 
-                        <ul class="social-icons">
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
 
+<div class="verticalgap" style="height:20px"></div>
+
+<section id="result">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title wow fadeInDown">OUR TEAM</h2>
+            <p class="wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa <br> semper aliquam quis mattis quam.</p> 
         </div>
-    </section><!--/#results-->
-
-    <section id="impact">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title wow fadeInDown">Gallery</h2>
-                <p class="wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa <br> semper aliquam quis mattis quam.</p>
-            </div>
-    
-            <div class="text-center">
-                <ul class="portfolio-filter" style="display:none">
-                    <li><a class="active" href="#" data-filter="*">All Works</a></li>
-                    <li><a href="#" data-filter=".designing">Aroma</a></li>
-                    <li><a href="#" data-filter=".mobile">Manicure</a></li>
-                    <li><a href="#" data-filter=".development">Body Spa</a></li>
-                </ul><!--/#portfolio-filter-->
-            </div>
-    
-            <div class="portfolio-items">
-                <div class="portfolio-item designing">
-                    <div class="portfolio-item-inner">
-                        <img class="img-responsive" src="images/portfolio/01.jpg" alt="">
-                        <div class="portfolio-info"> 
-                            <a class="preview" href="images/portfolio/01.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
-                        </div>
+            
+        <div class="row text-center">
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="0ms">
+                    <div class="team-img">
+                        <img class="img-responsive" src="images/team/01.jpg" alt="">
                     </div>
-                </div><!--/.portfolio-item-->
-    
-                <div class="portfolio-item mobile development">
-                    <div class="portfolio-item-inner">
-                        <img class="img-responsive" src="images/portfolio/02.jpg" alt="">
-                        <div class="portfolio-info"> 
-                            <a class="preview" href="images/portfolio/02.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
-                        </div>
-                    </div>
-                </div><!--/.portfolio-item-->
-    
-                <div class="portfolio-item designing">
-                    <div class="portfolio-item-inner">
-                        <img class="img-responsive" src="images/portfolio/03.jpg" alt="">
-                        <div class="portfolio-info"> 
-                            <a class="preview" href="images/portfolio/03.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
-                        </div>
-                    </div>
-                </div><!--/.portfolio-item-->
-    
-                <div class="portfolio-item mobile">
-                    <div class="portfolio-item-inner">
-                        <img class="img-responsive" src="images/portfolio/04.jpg" alt="">
-                        <div class="portfolio-info"> 
-                            <a class="preview" href="images/portfolio/04.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
-                        </div>
-                    </div>
-                </div><!--/.portfolio-item-->
-    
-                <div class="portfolio-item designing development">
-                    <div class="portfolio-item-inner">
-                        <img class="img-responsive" src="images/portfolio/05.jpg" alt="">
-                        <div class="portfolio-info"> 
-                            <a class="preview" href="images/portfolio/05.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
-                        </div>
-                    </div>
-                </div><!--/.portfolio-item-->
-    
-                <div class="portfolio-item mobile">
-                    <div class="portfolio-item-inner">
-                        <img class="img-responsive" src="images/portfolio/06.jpg" alt="">
-                        <div class="portfolio-info"> 
-                            <a class="preview" href="images/portfolio/06.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
-                        </div>
-                    </div>
-                </div><!--/.portfolio-item-->
-    
-                <div class="portfolio-item designing development">
-                    <div class="portfolio-item-inner">
-                        <img class="img-responsive" src="images/portfolio/07.jpg" alt="">
-                        <div class="portfolio-info"> 
-                            <a class="preview" href="images/portfolio/07.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
-                        </div>
-                    </div>
-                </div><!--/.portfolio-item-->
-    
-                <div class="portfolio-item mobile">
-                    <div class="portfolio-item-inner">
-                        <img class="img-responsive" src="images/portfolio/08.jpg" alt="">
-                        <div class="portfolio-info"> 
-                            <a class="preview" href="images/portfolio/08.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
-                        </div>
-                    </div>
-                </div><!--/.portfolio-item-->
-            </div>
-        </div><!--/.container-->
-    </section><!--/#impact-->
-
-    <section id="schedule">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title wow fadeInDown">Pricing</h2>
-                <p class="wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa <br> semper aliquam quis mattis quam.</p>
-            </div>
-
-            <div class="row">
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="wow zoomIn" data-wow-duration="400ms" data-wow-delay="0ms">
-                        <ul class="pricing">
-                            <li class="plan-header">
-                                <div class="price-duration">
-                                    <span class="price">
-                                        $45
-                                    </span>
-                                    <span class="duration">
-                                        per month
-                                    </span>
-                                </div>
-
-                                <div class="plan-name">
-                                    Basic
-                                </div>
-                            </li>
-                            <li><strong>1</strong> DOMAIN</li>
-                            <li><strong>100GB</strong> DISK SPACE</li>
-                            <li><strong>UNLIMITED</strong> BANDWIDTH</li>
-                            <li>SHARED SSL CERTIFICATE</li>
-                            <li><strong>10</strong> EMAIL ADDRESS</li>
-                            <li><strong>24/7</strong> SUPPORT</li>
-                            <li class="plan-purchase"><a class="btn btn-primary" href="#">Get It Now!</a></li>
-                        </ul>
-                    </div>
+                    <div class="team-info">
+                        <h3>Micky Deo</h3>
+                        <span>Founder</span> 
+                    </div> 
+                    <ul class="social-icons">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
                 </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="wow zoomIn" data-wow-duration="400ms" data-wow-delay="200ms">
-                        <ul class="pricing featured">
-                            <li class="plan-header">
-                                <div class="price-duration">
-                                    <span class="price">
-                                        $85
-                                    </span>
-                                    <span class="duration">
-                                        per month
-                                    </span>
-                                </div>
-
-                                <div class="plan-name">
-                                    Bronze
-                                </div>
-                            </li>
-                            <li><strong>5</strong> DOMAIN</li>
-                            <li><strong>500GB</strong> DISK SPACE</li>
-                            <li><strong>UNLIMITED</strong> BANDWIDTH</li>
-                            <li>SHARED SSL CERTIFICATE</li>
-                            <li><strong>30</strong> EMAIL ADDRESS</li>
-                            <li><strong>24/7</strong> SUPPORT</li>
-                            <li class="plan-purchase"><a class="btn btn-primary" href="#">Get It Now!</a></li>
-                        </ul>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="100ms">
+                    <div class="team-img">
+                        <img class="img-responsive" src="images/team/02.jpg" alt="">
                     </div>
+                    <div class="team-info">
+                        <h3>Mike Timobbs</h3>
+                        <span>Sr. Dresser</span> 
+                    </div> 
+                    <ul class="social-icons">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
                 </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="wow zoomIn" data-wow-duration="400ms" data-wow-delay="400ms">
-                        <ul class="pricing">
-                            <li class="plan-header">
-                                <div class="price-duration">
-                                    <span class="price">
-                                        $125
-                                    </span>
-                                    <span class="duration">
-                                        per month
-                                    </span>
-                                </div>
-
-                                <div class="plan-name">
-                                    Silver
-                                </div>
-                            </li>
-                            <li><strong>10</strong> DOMAIN</li>
-                            <li><strong>2GB</strong> DISK SPACE</li>
-                            <li><strong>UNLIMITED</strong> BANDWIDTH</li>
-                            <li>SHARED SSL CERTIFICATE</li>
-                            <li><strong>50</strong> EMAIL ADDRESS</li>
-                            <li><strong>24/7</strong> SUPPORT</li>
-                            <li class="plan-purchase"><a class="btn btn-primary" href="#">Get It Now!</a></li>
-                        </ul>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="200ms">
+                    <div class="team-img">
+                        <img class="img-responsive" src="images/team/03.jpg" alt="">
                     </div>
+                    <div class="team-info">
+                        <h3>Remo Silvaus</h3>
+                        <span>Sr. Therapist</span> 
+                    </div> 
+                    <ul class="social-icons">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
                 </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="wow zoomIn" data-wow-duration="400ms" data-wow-delay="600ms">
-                        <ul class="pricing">
-                            <li class="plan-header">
-                                <div class="price-duration">
-                                    <span class="price">
-                                        $185
-                                    </span>
-                                    <span class="duration">
-                                        per month
-                                    </span>
-                                </div>
-
-                                <div class="plan-name">
-                                    Gold
-                                </div>
-                            </li>
-                            <li><strong>15</strong> DOMAIN</li>
-                            <li><strong>10GB</strong> DISK SPACE</li>
-                            <li><strong>UNLIMITED</strong> BANDWIDTH</li>
-                            <li>SHARED SSL CERTIFICATE</li>
-                            <li><strong>100</strong> EMAIL ADDRESS</li>
-                            <li><strong>24/7</strong> SUPPORT</li>
-                            <li class="plan-purchase"><a class="btn btn-primary" href="#">Get It Now!</a></li>
-                        </ul>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
+                    <div class="team-img">
+                        <img class="img-responsive" src="images/team/04.jpg" alt="">
                     </div>
+                    <div class="team-info">
+                        <h3>Niscal Deon</h3>
+                        <span>Massager</span> 
+                    </div> 
+                    <ul class="social-icons">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
                 </div>
             </div>
         </div>
-    </section><!--/#schedule-->
 
-    <section id="peripherals">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title wow fadeInDown">Gallery</h2>
-                <p class="wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa <br> semper aliquam quis mattis quam.</p>
+    </div>
+</section><!--/#results-->
+
+<section id="impact">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title wow fadeInDown">Gallery</h2>
+            <p class="wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa <br> semper aliquam quis mattis quam.</p>
+        </div>
+
+        <div class="text-center">
+            <ul class="portfolio-filter" style="display:none">
+                <li><a class="active" href="#" data-filter="*">All Works</a></li>
+                <li><a href="#" data-filter=".designing">Aroma</a></li>
+                <li><a href="#" data-filter=".mobile">Manicure</a></li>
+                <li><a href="#" data-filter=".development">Body Spa</a></li>
+            </ul><!--/#portfolio-filter-->
+        </div>
+
+        <div class="portfolio-items">
+            <div class="portfolio-item designing">
+                <div class="portfolio-item-inner">
+                    <img class="img-responsive" src="images/portfolio/01.jpg" alt="">
+                    <div class="portfolio-info"> 
+                        <a class="preview" href="images/portfolio/01.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                    </div>
+                </div>
+            </div><!--/.portfolio-item-->
+
+            <div class="portfolio-item mobile development">
+                <div class="portfolio-item-inner">
+                    <img class="img-responsive" src="images/portfolio/02.jpg" alt="">
+                    <div class="portfolio-info"> 
+                        <a class="preview" href="images/portfolio/02.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                    </div>
+                </div>
+            </div><!--/.portfolio-item-->
+
+            <div class="portfolio-item designing">
+                <div class="portfolio-item-inner">
+                    <img class="img-responsive" src="images/portfolio/03.jpg" alt="">
+                    <div class="portfolio-info"> 
+                        <a class="preview" href="images/portfolio/03.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                    </div>
+                </div>
+            </div><!--/.portfolio-item-->
+
+            <div class="portfolio-item mobile">
+                <div class="portfolio-item-inner">
+                    <img class="img-responsive" src="images/portfolio/04.jpg" alt="">
+                    <div class="portfolio-info"> 
+                        <a class="preview" href="images/portfolio/04.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                    </div>
+                </div>
+            </div><!--/.portfolio-item-->
+
+            <div class="portfolio-item designing development">
+                <div class="portfolio-item-inner">
+                    <img class="img-responsive" src="images/portfolio/05.jpg" alt="">
+                    <div class="portfolio-info"> 
+                        <a class="preview" href="images/portfolio/05.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                    </div>
+                </div>
+            </div><!--/.portfolio-item-->
+
+            <div class="portfolio-item mobile">
+                <div class="portfolio-item-inner">
+                    <img class="img-responsive" src="images/portfolio/06.jpg" alt="">
+                    <div class="portfolio-info"> 
+                        <a class="preview" href="images/portfolio/06.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                    </div>
+                </div>
+            </div><!--/.portfolio-item-->
+
+            <div class="portfolio-item designing development">
+                <div class="portfolio-item-inner">
+                    <img class="img-responsive" src="images/portfolio/07.jpg" alt="">
+                    <div class="portfolio-info"> 
+                        <a class="preview" href="images/portfolio/07.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                    </div>
+                </div>
+            </div><!--/.portfolio-item-->
+
+            <div class="portfolio-item mobile">
+                <div class="portfolio-item-inner">
+                    <img class="img-responsive" src="images/portfolio/08.jpg" alt="">
+                    <div class="portfolio-info"> 
+                        <a class="preview" href="images/portfolio/08.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                    </div>
+                </div>
+            </div><!--/.portfolio-item-->
+        </div>
+    </div><!--/.container-->
+</section><!--/#impact-->
+
+<section id="schedule">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title wow fadeInDown">Pricing</h2>
+            <p class="wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa <br> semper aliquam quis mattis quam.</p>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="wow zoomIn" data-wow-duration="400ms" data-wow-delay="0ms">
+                    <ul class="pricing">
+                        <li class="plan-header">
+                            <div class="price-duration">
+                                <span class="price">
+                                    $45
+                                </span>
+                                <span class="duration">
+                                    per month
+                                </span>
+                            </div>
+
+                            <div class="plan-name">
+                                Basic
+                            </div>
+                        </li>
+                        <li><strong>1</strong> DOMAIN</li>
+                        <li><strong>100GB</strong> DISK SPACE</li>
+                        <li><strong>UNLIMITED</strong> BANDWIDTH</li>
+                        <li>SHARED SSL CERTIFICATE</li>
+                        <li><strong>10</strong> EMAIL ADDRESS</li>
+                        <li><strong>24/7</strong> SUPPORT</li>
+                        <li class="plan-purchase"><a class="btn btn-primary" href="#">Get It Now!</a></li>
+                    </ul>
+                </div>
             </div>
-    
-            <div class="text-center">
-                <ul class="portfolio-filter" style="display:none">
-                    <li><a class="active" href="#" data-filter="*">All Works</a></li>
-                    <li><a href="#" data-filter=".designing">Aroma</a></li>
-                    <li><a href="#" data-filter=".mobile">Manicure</a></li>
-                    <li><a href="#" data-filter=".development">Body Spa</a></li>
-                </ul><!--/#portfolio-filter-->
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="wow zoomIn" data-wow-duration="400ms" data-wow-delay="200ms">
+                    <ul class="pricing featured">
+                        <li class="plan-header">
+                            <div class="price-duration">
+                                <span class="price">
+                                    $85
+                                </span>
+                                <span class="duration">
+                                    per month
+                                </span>
+                            </div>
+
+                            <div class="plan-name">
+                                Bronze
+                            </div>
+                        </li>
+                        <li><strong>5</strong> DOMAIN</li>
+                        <li><strong>500GB</strong> DISK SPACE</li>
+                        <li><strong>UNLIMITED</strong> BANDWIDTH</li>
+                        <li>SHARED SSL CERTIFICATE</li>
+                        <li><strong>30</strong> EMAIL ADDRESS</li>
+                        <li><strong>24/7</strong> SUPPORT</li>
+                        <li class="plan-purchase"><a class="btn btn-primary" href="#">Get It Now!</a></li>
+                    </ul>
+                </div>
             </div>
-    
-            <div class="portfolio-items">
-                <div class="portfolio-item designing">
-                    <div class="portfolio-item-inner">
-                        <img class="img-responsive" src="images/portfolio/01.jpg" alt="">
-                        <div class="portfolio-info"> 
-                            <a class="preview" href="images/portfolio/01.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
-                        </div>
-                    </div>
-                </div><!--/.portfolio-item-->
-    
-                <div class="portfolio-item mobile development">
-                    <div class="portfolio-item-inner">
-                        <img class="img-responsive" src="images/portfolio/02.jpg" alt="">
-                        <div class="portfolio-info"> 
-                            <a class="preview" href="images/portfolio/02.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
-                        </div>
-                    </div>
-                </div><!--/.portfolio-item-->
-    
-                <div class="portfolio-item designing">
-                    <div class="portfolio-item-inner">
-                        <img class="img-responsive" src="images/portfolio/03.jpg" alt="">
-                        <div class="portfolio-info"> 
-                            <a class="preview" href="images/portfolio/03.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
-                        </div>
-                    </div>
-                </div><!--/.portfolio-item-->
-    
-                <div class="portfolio-item mobile">
-                    <div class="portfolio-item-inner">
-                        <img class="img-responsive" src="images/portfolio/04.jpg" alt="">
-                        <div class="portfolio-info"> 
-                            <a class="preview" href="images/portfolio/04.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
-                        </div>
-                    </div>
-                </div><!--/.portfolio-item-->
-    
-                <div class="portfolio-item designing development">
-                    <div class="portfolio-item-inner">
-                        <img class="img-responsive" src="images/portfolio/05.jpg" alt="">
-                        <div class="portfolio-info"> 
-                            <a class="preview" href="images/portfolio/05.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
-                        </div>
-                    </div>
-                </div><!--/.portfolio-item-->
-    
-                <div class="portfolio-item mobile">
-                    <div class="portfolio-item-inner">
-                        <img class="img-responsive" src="images/portfolio/06.jpg" alt="">
-                        <div class="portfolio-info"> 
-                            <a class="preview" href="images/portfolio/06.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
-                        </div>
-                    </div>
-                </div><!--/.portfolio-item-->
-    
-                <div class="portfolio-item designing development">
-                    <div class="portfolio-item-inner">
-                        <img class="img-responsive" src="images/portfolio/07.jpg" alt="">
-                        <div class="portfolio-info"> 
-                            <a class="preview" href="images/portfolio/07.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
-                        </div>
-                    </div>
-                </div><!--/.portfolio-item-->
-    
-                <div class="portfolio-item mobile">
-                    <div class="portfolio-item-inner">
-                        <img class="img-responsive" src="images/portfolio/08.jpg" alt="">
-                        <div class="portfolio-info"> 
-                            <a class="preview" href="images/portfolio/08.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
-                        </div>
-                    </div>
-                </div><!--/.portfolio-item-->
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="wow zoomIn" data-wow-duration="400ms" data-wow-delay="400ms">
+                    <ul class="pricing">
+                        <li class="plan-header">
+                            <div class="price-duration">
+                                <span class="price">
+                                    $125
+                                </span>
+                                <span class="duration">
+                                    per month
+                                </span>
+                            </div>
+
+                            <div class="plan-name">
+                                Silver
+                            </div>
+                        </li>
+                        <li><strong>10</strong> DOMAIN</li>
+                        <li><strong>2GB</strong> DISK SPACE</li>
+                        <li><strong>UNLIMITED</strong> BANDWIDTH</li>
+                        <li>SHARED SSL CERTIFICATE</li>
+                        <li><strong>50</strong> EMAIL ADDRESS</li>
+                        <li><strong>24/7</strong> SUPPORT</li>
+                        <li class="plan-purchase"><a class="btn btn-primary" href="#">Get It Now!</a></li>
+                    </ul>
+                </div>
             </div>
-        </div><!--/.container-->
-    </section><!--/#peripherals-->
-   
-   
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="wow zoomIn" data-wow-duration="400ms" data-wow-delay="600ms">
+                    <ul class="pricing">
+                        <li class="plan-header">
+                            <div class="price-duration">
+                                <span class="price">
+                                    $185
+                                </span>
+                                <span class="duration">
+                                    per month
+                                </span>
+                            </div>
+
+                            <div class="plan-name">
+                                Gold
+                            </div>
+                        </li>
+                        <li><strong>15</strong> DOMAIN</li>
+                        <li><strong>10GB</strong> DISK SPACE</li>
+                        <li><strong>UNLIMITED</strong> BANDWIDTH</li>
+                        <li>SHARED SSL CERTIFICATE</li>
+                        <li><strong>100</strong> EMAIL ADDRESS</li>
+                        <li><strong>24/7</strong> SUPPORT</li>
+                        <li class="plan-purchase"><a class="btn btn-primary" href="#">Get It Now!</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section><!--/#schedule-->
 
     <section id="business-stats">
         <div class="container">
