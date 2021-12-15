@@ -272,6 +272,30 @@
             </div>
         </div>
 
+        <div class="verticalgap" style="height:30px"></div>
+
+        <div class="row">
+            <div class="col-sm-6 wow fadeInLeft">
+              <img class="img-responsive" src="images/libraries.PNG" alt="libraries">
+            </div>
+
+            <div class="col-sm-6 wow fadeInRight">
+                <h3 class="column-title">Libaries</h3>
+                <p>
+                    These are the libraries we used. We used the Wire.h libary to control the digital GPIO pins, which meant we didn't have to use ports 
+                    or pins or binary numbers, all things we had to do in labs to fully understand what the digital writes and read did. We used the 
+                    Adafruit_VCNL4010.h to control the proximity sensor. This gave us the ability to read the values from the sensor and to use them 
+                    in our circuit. In fact, our program is just the example program for this header file expanded to fit our needs. It contained the 
+                    ability to read the ambient light level as well, but we didn't need that. We used the Adafruit_LiquidCrystal.h library to control 
+                    the LCD. We had a lot of trouble with this, as the original library we were using wasn't working. We went through a lot of back and 
+                    forth, even asking our professor for help, and eventually realized that one of our wires was dead, but that we were also using the 
+                    wrong library. We switched to this one and replaced the wire, and it worked. We used the EEPROM.h library to get the value of water 
+                    bottles stored to save on the device even when the power was disconnected. This allows us to move the device and not lose that 
+                    information.
+                </p>
+            </div>
+        </div>
+
         <div class="row">
             <div class="col-sm-6 wow fadeInLeft">
                 <table style="width:100%">
